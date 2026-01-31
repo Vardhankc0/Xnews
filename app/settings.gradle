@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+plugins {
+    // This plugin manages the Java toolchain and JDK downloads automatically
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.4.0'
+}
+
+// The logical name of your entire project
+rootProject.name = 'newsapp'
+
+// Tells Gradle to include the 'app' folder as a sub-module
+include('app')
